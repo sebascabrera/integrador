@@ -1,3 +1,8 @@
 div {
     background-color: rgb(0, 53, 142);
 }
+
+app-logoredes {
+    float: right;
+    margin-top: 25px;
+}
