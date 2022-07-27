@@ -6,11 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LogoargprogramaComponent } from './components/logoargprograma/logoargprograma.component';
 import { LogoredesComponent } from './components/logoredes/logoredes.component';
-<<<<<<< HEAD
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
-=======
 import { BannerComponent } from './components/banner/banner.component';
->>>>>>> develop
 
 @NgModule({
   declarations: [
@@ -18,11 +15,9 @@ import { BannerComponent } from './components/banner/banner.component';
     HeaderComponent,
     LogoargprogramaComponent,
     LogoredesComponent,
-<<<<<<< HEAD
-    AcercaDeComponent
-=======
+    HeaderComponent,
+    AcercaDeComponent,
     BannerComponent
->>>>>>> develop
   ],
   imports: [
     BrowserModule,
