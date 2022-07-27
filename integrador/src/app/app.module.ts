@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LogoargprogramaComponent } from './components/logoargprograma/logoargprograma.component';
 import { LogoredesComponent } from './components/logoredes/logoredes.component';
+import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { BannerComponent } from './components/banner/banner.component';
 
 @NgModule({
@@ -14,6 +15,8 @@ import { BannerComponent } from './components/banner/banner.component';
     HeaderComponent,
     LogoargprogramaComponent,
     LogoredesComponent,
+    HeaderComponent,
+    AcercaDeComponent,
     BannerComponent
   ],
   imports: [
