@@ -1,5 +1,45 @@
 #fotoperfil {
-    width: 150px;
-    height: 150px;
-    margin: 10 px;
+    width: 250px;
+    height: 250px;
+    margin-right: 2px;
+}
+
+@media (min-width: 768px) {
+    #fotoperfil {
+        position: absolute;
+        left: 1%;
+        border-radius: 100%;
+        top: 570px;
+        width: 20%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #fotoperfil {
+        position: absolute;
+        left: 1%;
+        border-radius: 100%;
+        top: 570px;
+        width: 18%;
+    }
+}
+
+@media (max-width: 768px) {
+    #fotoperfil {
+        left: 1%;
+        border-radius: 100%;
+    }
+}
+
+#nombre {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+row {
+    padding: 20px;
+}
+
+div {
+    text-align: center;
 }
