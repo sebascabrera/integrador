@@ -9,21 +9,28 @@ import { LogoredesComponent } from './components/logoredes/logoredes.component';
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+import { NgCircleProgressModule } from 'ng-circle-progress/lib/ng-circle-progress.module';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+        AppComponent,
     HeaderComponent,
     LogoargprogramaComponent,
     LogoredesComponent,
     HeaderComponent,
     AcercaDeComponent,
     BannerComponent,
-    ExperienciaComponent
+    ExperienciaComponent,
+    SkillsComponent
   ],
   imports: [
+    
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({
+      // set defaults here
+     }),
   ],
   providers: [],
   bootstrap: [AppComponent]
