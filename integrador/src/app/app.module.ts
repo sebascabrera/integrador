@@ -9,8 +9,9 @@ import { LogoredesComponent } from './components/logoredes/logoredes.component';
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
-import { NgCircleProgressModule } from 'ng-circle-progress/lib/ng-circle-progress.module';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 import { SkillsComponent } from './components/skills/skills.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     AcercaDeComponent,
     BannerComponent,
     ExperienciaComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProyectosComponent
   ],
   imports: [
     
