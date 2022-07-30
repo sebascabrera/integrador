@@ -27,7 +27,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ExperienciaComponent,
     SkillsComponent,
     ProyectosComponent,
-    FooterComponent,
+    FooterComponent, 
     NavbarComponent
   ],
   imports: [
