@@ -1,0 +1,15 @@
+.row {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    float: right;
+}
+
+@media (max-width: 580px) {
+    .row {
+        display: flex;
+        text-align: center;
+    }
+}
