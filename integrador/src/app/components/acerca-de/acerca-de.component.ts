@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { persona } from 'src/app/model/persona.model';
+import {PersonaService} from 'src/app/service/persona.service';
 @Component({
   selector: 'app-acerca-de',
   templateUrl: './acerca-de.component.html',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcercaDeComponent implements OnInit {
 
-  constructor() { }
+  persona = new persona("","","");
+
+  constructor( public PersonaService: PersonaService  ) { }
 
   ngOnInit(): void {
+
+    this.PersonaService.getPersona().subscribe(data => {this.persona = data} )
+
   }
 
 }
