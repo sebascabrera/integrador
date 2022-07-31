@@ -11,18 +11,26 @@
 
                 <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
 
-                    <form style="width: 23rem;">
+                    <form [formGroup]="form" style="width: 23rem;">
 
                         <h3 class="fw-bold mb-3 pb-3" style="letter-spacing: 1px;">LOG IN</h3>
 
                         <div class="form-outline mb-4">
-                            <input type="email" id="form2Example18" class="form-control form-control-lg" />
+                            <input type="email" formControlName="email" id="form2Example18" class="form-control form-control-lg" />
                             <label class="form-label" for="form2Example18">Email </label>
+                            <div ngIf="Email?errors && Email?.touched">
+                                <p ngIf="Email?hasError('required')" class="text-danger">El Email es requerido</p>
+                                <p ngIf="Email?hasError('email')" class="text-danger">El formato del Email debe ser valido</p>
+                            </div>
                         </div>
 
                         <div class="form-outline mb-4">
-                            <input type="password" id="form2Example28" class="form-control form-control-lg" />
+                            <input type="password" formControlName="password" id="form2Example28" class="form-control form-control-lg" />
                             <label class="form-label" for="form2Example28">Password</label>
+                            <div ngIf="Password?errors && Email?.touched">
+                                <p ngIf="Password?hasError('required')" class="text-danger">El Password es requerido</p>
+                                <p ngIf="Password?hasError('Password')" class="text-danger">Password debe ser de 8 o más caracteres</p>
+                            </div>
                         </div>
 
                         <div class="pt-1 mb-4">
